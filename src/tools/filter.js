@@ -395,6 +395,7 @@ export class Sharpen {
       this.#resetImage = false;
       command.execute();
     } else {
+      this.#resetImage = true;
       command.undo();
     }
 
